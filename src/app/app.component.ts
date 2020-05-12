@@ -13,7 +13,7 @@ export class AppComponent implements OnInit{
 
   producto = {
     descripcion : 'producto en venta',
-    precio      : 599.99,
+    precio      : 0.99,
     img         : 'imagen de tu producto'
   }
   title = 'angular-paypal-payment';
@@ -28,7 +28,7 @@ export class AppComponent implements OnInit{
             {
               description: this.producto.descripcion,
               amount     :{
-                currency_code: 'MXN',
+                currency_code: 'USD',
                 value        : this.producto.precio
               }
             }
